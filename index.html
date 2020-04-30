@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Алгоритми синтаксичного аналізу</title>
+	<script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script type="text/javascript" src="cyk.js"></script>
+    <script type="text/javascript" src="earley.js"></script>
+</head>
+<body>
+	<h1>Алгоритми синтаксичного аналізу</h1>
+	<hr>
+	<div class="canvas" id="leftcol">
+	<textarea id="txt" cols="1" rows="22">
+S -> NP VP
+NP -> DET N
+NP -> NP PP
+PP -> P NP
+VP -> V NP
+VP -> VP PP
+DET -> the
+NP -> I
+N -> man
+N -> telescope
+P -> with
+V -> saw
+P -> on
+P -> in</textarea>
+    <br>
+	<input type="text" id="sent" value="I saw the man">
+	<br>
+	<input type="button" id="id1" onclick="cky();" value="CYK">
+	<input type="button" id="id2" onclick="earley();" value="EARLEY">
+	<input type="button" id="reload" value="RESTART" onclick="location.reload();">
+	<h4 id='res'>Результат аналізу </h4>
+	<p>Алгоритми повертають значення <b>"TRUE"</b> у випадку належності слова мові граматики та <b>"FALSE"</b> у зворотньому випадку.</p>
+</div>
+	<div class="results" id="rightcol">
+        <table style="text-align: center;" class="chart" id="tbl"></table>
+    </div>
+</body>
+</html>

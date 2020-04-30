@@ -1,0 +1,105 @@
+html {
+	font-family: Ubuntu, Roboto, sans-serif; 
+}
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  text-align: center;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+input[type=text], textarea {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 10px;
+	font-size: 1em;
+    font-weight: bold;
+
+}
+
+textarea {
+	height: 350px;
+	font-size: 1.3em;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=button], button {
+    background-color: #f78e05;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #ff8c00;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: 12pt Roboto;
+    font-size: 100%;
+    width: 23.2%;
+}
+p {
+  width: 85%;
+}
+
+button:hover {
+    background-color: #ffb700;
+}
+
+input[type=button]:hover {
+    background-color: #ffb700;
+}
+
+.gray {
+  background-color: lightgray;
+}
+.green {
+    background-color: lightgreen;
+}
+.blue {
+    background-color: lightblue;
+}
+.bordered {
+    border: 1px solid black;
+}
+.words {
+    height: 2%;
+}
+.chart {
+    width: 70%;
+    height: 85%;
+}
+.results {
+    font-weight: bold;
+    width: 90%;
+}
+#leftcol {
+  float: left; /* Обтекание справа */
+  width: 30%; /* Ширина колонки */
+}
+
+#rightcol { /* Правая колонка */
+  text-align: center;
+  margin-left: 5%; /* Отступ слева */
+  margin-right: 10%;
+}
+
+.canvas {
+    width: 350px;
+    float: left;
+    margin: 8px;
+}
